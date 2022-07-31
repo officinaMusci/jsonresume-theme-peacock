@@ -1,10 +1,6 @@
-# jsonresume-theme-caffeine ![](https://travis-ci.org/kelyvin/jsonresume-theme-caffeine.svg?branch=master) [![npm version](https://badge.fury.io/js/jsonresume-theme-caffeine.svg)](https://www.npmjs.com/package/jsonresume-theme-caffeine)
+# jsonresume-theme-peacock ![](https://travis-ci.org/officinaMusci/jsonresume-theme-peacock.svg?branch=main) [![npm version](https://badge.fury.io/js/jsonresume-theme-peacock.svg)](https://www.npmjs.com/package/jsonresume-theme-peacock)
 
-This is the Caffeine theme repository for the [Json Resume](https://jsonresume.org/) project. Unlike the [json-theme-boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate) project, this environment has a much improved developer environment to make editing your theme super easy to do.
-
-> Recently upgraded to v2, which simplifies the development environment, uses `yarn` over `npm`, no longer requires global installs, and updates `resume-cli` v2 (since v3 is still not stable).
-
-![Richard Hendriks Reume](http://i.imgur.com/yktvc8m.png)
+This is the Peacock theme repository for the [Json Resume](https://jsonresume.org/) project. Unlike the [json-theme-boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate) project, this environment has a much improved developer environment to make editing your theme super easy to do.
 
 ## Table of Contents
 
@@ -20,6 +16,7 @@ This is the Caffeine theme repository for the [Json Resume](https://jsonresume.o
 * [Creating your resume.json](#creating-your-resumejson)
 * [Building the project](#building-the-project)
 * [Exporting your resume](#exporting-your-resume)
+
 ## Installation
 This project uses [gulp](http://gulpjs.com/) and [resume-cli](https://github.com/jsonresume/resume-cli) for all of its internal build processes. In theory, this project requires minimum a of `Node v8.2+` & `NPM v5.2` to run, but it is recommended to use `Node v12+`.
 
