@@ -40,3 +40,7 @@ public
 resume.json
 resume_*.json
 resume.pdf
+
+# Lock files
+*.lock
+package-lock.json
