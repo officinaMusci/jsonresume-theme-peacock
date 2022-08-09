@@ -1,3 +1,7 @@
 @function spacing($multiplier: 1) {
   @return $pad-unit * $multiplier;
 }
+
+@function fontBasedSpacing($multiplier: 1) {
+  @return $font-unit * $multiplier * $line-height;
+}

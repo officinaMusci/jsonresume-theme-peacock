@@ -8,20 +8,21 @@ $gray-light             : #ddd;
 $gray-lighter           : #eee;
 $gray-lightest          : #f8f8f8;
 
-$slate-gray             : #39424B;
-$slate-green            : #56817A;
+$primary-color          : rgb(255, 62, 181);
+$secondary-color        : rgb(118, 35, 47);
 
-$primary-color          : $slate-green;
-$secondary-color        : $slate-gray;
-
+$text-color             : #39424B;
 $link-color             : #2895F1;
 
 /*----- Fonts -----*/
 
-$primary-font               : 'Lato', Helvetica, Arial, sans-serif;
-$secondary-font             : 'Josefin Sans', Helvetica, Arial, sans-serif;
+$display-font            : 'Abruzzo', Helvetica, Arial, serif;
+$section-title-font      : 'Spock Pro', Helvetica, Arial, sans-serif;
+$text-font               : 'Spock Pro', Helvetica, Arial, sans-serif;
 
 /*----- Dimensions and sizes -----*/
+
+$line-height            : 1.3;
 
 $print-width            : 21cm;
 $print-height           : 29.7cm;
@@ -35,7 +36,10 @@ $desktop-width          : 1200px;
 $retina-width           : 1920px;
 
 $font-unit              : 4px;
-$profile-pic-size       : 52px;
 $aside-width            : 160px;
 $aside-margin           : 20px;
 $pad-unit               : 5px;
+
+/*----- Preferences -----*/
+
+$resume-label-first     : 'false';

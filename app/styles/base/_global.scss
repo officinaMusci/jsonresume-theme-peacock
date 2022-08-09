@@ -2,10 +2,82 @@
   padding-top: spacing(4);
 }
 
-.keyline {
-  width: spacing(9);
-  margin: 8px 0 10px;
-  border-top: 1px solid $primary-color;
+.profile-header {
+  width: calc(100% - #{fontBasedSpacing(10 + 4) + spacing()});
+  display: flex;
+  flex-direction: column;
+
+  @if $resume-label-first == 'true' {
+    flex-direction: column-reverse;
+
+    .name {
+      @extend h2;
+      max-width: calc(100% - #{$aside-width + ($aside-margin * 2) + fontBasedSpacing(10 + 4) + spacing()});
+      margin-left: $aside-width + $aside-margin;
+    }
+
+    .label {
+      @extend h1;
+      @include gradient-text(left, ($primary-color, $secondary-color));
+      box-shadow: 0 0 0 1px white; // Fix print gradient border
+      box-shadow: 0 0 0 1px white inset; // Fix print gradient border
+    }
+  } @else {
+    .name {
+      @include gradient-text(left, ($primary-color, $secondary-color));
+      box-shadow: 0 0 0 1px white; // Fix print gradient border
+      box-shadow: 0 0 0 1px white inset; // Fix print gradient border
+    }
+
+    .label {
+      max-width: calc(100% - #{$aside-width + ($aside-margin * 2) + fontBasedSpacing(10 + 4) + spacing()});
+      margin-left: $aside-width + $aside-margin;
+    }
+  }
+}
+
+.profile-pic {
+  img {
+    height: fontBasedSpacing(10 + 4) + spacing();
+    width: fontBasedSpacing(10 + 4) + spacing();
+    border-radius: 50%;
+  }
+}
+
+.section-header {
+  .time-range {
+    color: $secondary-color;
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  margin-bottom: spacing();
+  position: relative;
+  
+  h3 {
+    background-color: white;
+    padding-right: spacing(1);
+    margin-bottom: 0;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $primary-color;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: spacing() + 1px;
+  }
+
+  .right-column &::before {
+    @include gradient(left, ($primary-color, $secondary-color));
+  }
 }
 
 .pull-left {
@@ -18,20 +90,4 @@
 
 .clearfix {
   @include clearfix();
-}
-
-.profile-pic {
-  margin-top: -5px;
-  margin-right: 18px;
-
-  img {
-    height: $profile-pic-size;
-    width: $profile-pic-size;
-    border-radius: 50%;
-    border: 2px solid $primary-color;
-  }
-}
-
-.summary {
-  margin: spacing(1) 0 spacing(1);
 }

@@ -10,6 +10,19 @@
   font-size: $font-unit * $multiplier;
 }
 
+@mixin gradient($direction, $list) { 
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);  
+}
+
+@mixin gradient-text($direction, $list) {
+  @include gradient($direction, $list);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 @mixin clearfix {
   &:after {
     content: "";

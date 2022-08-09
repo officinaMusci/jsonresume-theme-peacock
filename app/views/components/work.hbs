@@ -7,7 +7,7 @@
     {{> section-header name=this.name website=this.url }}
 
     {{#if position}}
-      <h4>{{position}}</h4>
+      <h5>{{position}}</h5>
     {{/if}}
 
     {{#if summary}}
@@ -17,7 +17,7 @@
     {{#if highlights.length}}
       <ul>
         {{#each highlights}}
-        <li>{{.}}</li>
+          <li>{{.}}</li>
         {{/each}}
       </ul>
     {{/if}}
