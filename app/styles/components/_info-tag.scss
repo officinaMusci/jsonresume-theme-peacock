@@ -36,6 +36,6 @@
     @include font-size(2.75);
     display: inline-block;
     vertical-align: middle;
-    width: $aside-width - $aside-margin - 1;
+    width: $aside-width - $aside-margin - 2;
   }
 }

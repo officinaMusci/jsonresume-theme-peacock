@@ -3,9 +3,17 @@
 }
 
 .profile-header {
-  width: calc(100% - #{fontBasedSpacing(10 + 4) + spacing()});
+  width: calc(100% - #{fontBasedSpacing(10 + 4) + spacing(2)});
+  margin-top: -3px;
+  margin-bottom: -3px;
   display: flex;
   flex-direction: column;
+
+  .name,
+  .label {
+    box-sizing: border-box;
+    width: fit-content;
+  }
 
   @if $resume-label-first == 'true' {
     flex-direction: column-reverse;
@@ -19,14 +27,24 @@
     .label {
       @extend h1;
       @include gradient-text(left, ($primary-color, $secondary-color));
-      box-shadow: 0 0 0 1px white; // Fix print gradient border
-      box-shadow: 0 0 0 1px white inset; // Fix print gradient border
+      
+      // Fix print gradient border
+      padding: 0 2px;
+      border: 1px solid white;
+      box-shadow: 0 0 0 2px white;
+      box-shadow: 0 0 0 2px white inset;
+      margin-left: -3px;
     }
   } @else {
     .name {
       @include gradient-text(left, ($primary-color, $secondary-color));
-      box-shadow: 0 0 0 1px white; // Fix print gradient border
-      box-shadow: 0 0 0 1px white inset; // Fix print gradient border
+      
+      // Fix print gradient border
+      padding: 0 2px;
+      border: 1px solid white;
+      box-shadow: 0 0 0 2px white;
+      box-shadow: 0 0 0 2px white inset;
+      margin-left: -3px;
     }
 
     .label {

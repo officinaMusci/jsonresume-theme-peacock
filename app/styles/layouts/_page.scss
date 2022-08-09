@@ -1,10 +1,11 @@
 .page {
+  box-sizing: border-box;
   background: white;
   width: $page-width;
   min-height: $page-height;
   display: block;
   margin: 0 auto;
-  padding: spacing(9) spacing(6);
+  padding: spacing(8) spacing(5);
   @include shadow();
   @include clearfix();
 }
