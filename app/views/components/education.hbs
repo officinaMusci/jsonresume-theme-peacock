@@ -3,11 +3,11 @@
   {{> title value="Education"}} {{#each resume.education}}
   <section class="item">
     {{> section-header name=this.institution website=this.url }}
-    {{#if studyType}}
-      <h5>{{studyType}}</h5>
+    {{#if area}}
+      <h5>{{area}}</h5>
     {{/if}}
 
-    <p class="summary">{{#if area}}{{area}}{{/if}}{{#if specialization}}, <span class="specialization">{{specialization}}</span>{{/if}}{{#if gpa}} — {{gpa}}{{/if}}</p>
+    <p class="summary">{{#if studyType}}{{studyType}}{{/if}}{{#if score}}. <em>{{score}}</em>{{/if}}</p>
 
     {{#if courses.length}}
       <ul>
