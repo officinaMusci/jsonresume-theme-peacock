@@ -22,7 +22,7 @@
 @mixin bold-font() {
   @if ($bold-text-font != 'false') {
     font-family: $bold-text-font;
-    font-style: normal;
+    font-weight: normal;
   } @else {
     font-weight: bold;
   }
