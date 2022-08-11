@@ -25,8 +25,8 @@ h1 {
 
 h2 {
   @include font-size(4);
+  @include bold-font();
   font-family: $text-font;
-  font-weight: bold;
   color: $secondary-color;
   margin-bottom: spacing(2.5);
 }
@@ -42,16 +42,16 @@ h3 {
 
 h4 {
   @include font-size(3.5);
+  @include bold-font();
   font-family: $text-font;
-  font-weight: bold;
   color: $secondary-color;
   margin-bottom: spacing(2);
 }
 
 h5 {
   @include font-size(3.25);
+  @include bold-font();
   font-family: $text-font;
-  font-weight: bold;
   margin-bottom: spacing(1.75);
 }
 
@@ -81,23 +81,6 @@ ul {
   margin: 0 0 spacing(1.5);
 }
 
-p,
-li {
-  @include font-size(2.75);
-}
-
-blockquote {
-  @include font-size(2.75);
-  font-family: $text-font;
-  font-style: italic;
-
-  margin: spacing(2) spacing(5);
-}
-
-em {
-  color: $gray-dark;
-}
-
 ul {
   list-style: none;
   padding-left: 0;
@@ -112,10 +95,30 @@ ul {
   }
 }
 
+p,
+li {
+  @include font-size(2.75);
+}
+
+blockquote {
+  @include font-size(2.75);
+  @include italic-font();
+  margin: spacing(2) spacing(5);
+}
+
+em {
+  @include italic-font();
+  color: $gray-dark;
+}
+
+strong {
+  @include bold-font();
+}
+
 .bold {
-  font-weight: bold;
+  @include bold-font();
 }
 
 .italic {
-  font-style: italic;
+  @include italic-font();
 }

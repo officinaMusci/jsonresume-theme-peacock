@@ -10,6 +10,24 @@
   font-size: $font-unit * $multiplier;
 }
 
+@mixin italic-font() {
+  @if ($italic-text-font != 'false') {
+    font-family: $italic-text-font;
+    font-style: normal;
+  } @else {
+    font-style: italic;
+  }
+}  
+
+@mixin bold-font() {
+  @if ($bold-text-font != 'false') {
+    font-family: $bold-text-font;
+    font-style: normal;
+  } @else {
+    font-weight: bold;
+  }
+}
+
 @mixin gradient($direction, $list) { 
   background: -webkit-linear-gradient($direction, $list);
   background: -moz-linear-gradient($direction, $list);
