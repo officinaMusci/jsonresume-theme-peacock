@@ -20,7 +20,7 @@ h1 {
   font-family: $display-font;
   font-weight: normal;
   color: $primary-color;
-  margin-bottom: spacing();
+  margin-bottom: spacing(2.75);
 }
 
 h2 {
@@ -28,7 +28,7 @@ h2 {
   font-family: $text-font;
   font-weight: bold;
   color: $secondary-color;
-  margin-bottom: spacing(.4);
+  margin-bottom: spacing(2.5);
 }
 
 h3 {
@@ -37,7 +37,7 @@ h3 {
   font-weight: normal;
   color: $primary-color;
   text-transform: uppercase;
-  margin-bottom: spacing(.375);
+  margin-bottom: spacing(2.25);
 }
 
 h4 {
@@ -45,21 +45,21 @@ h4 {
   font-family: $text-font;
   font-weight: bold;
   color: $secondary-color;
-  margin-bottom: spacing(.35);
+  margin-bottom: spacing(2);
 }
 
 h5 {
   @include font-size(3.25);
   font-family: $text-font;
   font-weight: bold;
-  margin-bottom: spacing(.325);
+  margin-bottom: spacing(1.75);
 }
 
 h6 {
   @include font-size(3);
   font-family: $text-font;
   font-weight: normal;
-  margin-bottom: spacing(.3);
+  margin-bottom: spacing(1.5);
 }
 
 a {
@@ -78,7 +78,7 @@ a {
 
 p,
 ul {
-  margin: 0 0 spacing(2);
+  margin: 0 0 spacing(1.5);
 }
 
 p,
