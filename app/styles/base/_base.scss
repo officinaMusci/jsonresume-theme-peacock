@@ -86,8 +86,8 @@ ul {
   padding-left: 0;
 
   li {
-    padding: spacing(.5) spacing();
-    background-color: $gray-lighter;
+    padding: spacing(.7) spacing(.8) spacing(.3);
+    border: 1px solid $gray-lighter;
     border-radius: 2px;
     margin-bottom: spacing(.5);
     margin-right: spacing(.5);

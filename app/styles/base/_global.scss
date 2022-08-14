@@ -3,7 +3,7 @@
 }
 
 .profile-header {
-  width: calc(100% - #{fontBasedSpacing(10 + 4) + spacing(2)});
+  width: calc(100% - #{fontBasedSpacing(10 + 4) + spacing(2.75)});
   margin-top: -3px;
   margin-bottom: -3px;
   display: flex;
@@ -20,7 +20,7 @@
 
     .name {
       @extend h2;
-      max-width: calc(100% - #{$aside-width + ($aside-margin * 2) + fontBasedSpacing(10 + 4) + spacing()});
+      max-width: calc(100% - #{$aside-width + $aside-margin});
       margin-left: $aside-width + $aside-margin;
     }
 
@@ -48,7 +48,7 @@
     }
 
     .label {
-      max-width: calc(100% - #{$aside-width + ($aside-margin * 2) + fontBasedSpacing(10 + 4) + spacing()});
+      max-width: calc(100% - #{$aside-width + $aside-margin});
       margin-left: $aside-width + $aside-margin;
     }
   }
@@ -70,7 +70,7 @@
 }
 
 .title {
-  margin-bottom: spacing();
+  margin-bottom: spacing(2);
   position: relative;
   
   h3 {

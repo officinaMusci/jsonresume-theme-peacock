@@ -2,10 +2,13 @@
   <div class="container languages-container">
     {{> title value="Languages"}}
 
-    <ul>
-      {{#each resume.languages}}
-        <li>{{language}} {{#if fluency}}<em>({{fluency}})</em>{{/if}}</li>
-      {{/each}}
-    </ul>
+    {{#each resume.languages}}
+      <section class="item">
+        {{> section-header name=language }}
+        {{#if fluency}}
+          <p>{{fluency}}</p>
+        {{/if}}
+      </section>
+    {{/each}}
   </div>
 {{/if}}
