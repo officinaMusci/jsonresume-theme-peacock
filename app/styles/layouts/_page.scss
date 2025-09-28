@@ -6,18 +6,22 @@
   display: block;
   margin: 0 auto;
   padding: spacing(8) spacing(5);
-  @include shadow();
-  @include clearfix();
+  // @include shadow();
+  
+  .resume-content {
+    display: flex;
+    flex-direction: row;
+
+    .left-column {
+      flex: 0 0 $aside-width;
+      margin-right: $aside-margin;
+      word-wrap: break-word;
+    }
+    
+    .right-column {
+      flex: 1;
+      overflow: hidden;
+    }
+  }
 }
 
-.left-column {
-  float: left;
-  width: $aside-width;
-  margin-right: $aside-margin;
-  word-wrap: break-word;
-}
-
-.right-column {
-  width: auto;
-  overflow: hidden;
-}

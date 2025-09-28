@@ -8,17 +8,17 @@ $gray-light             : #ddd;
 $gray-lighter           : #eee;
 $gray-lightest          : #f8f8f8;
 
-$primary-color          : rgb(255, 62, 181);
-$secondary-color        : rgb(118, 35, 47);
+$primary-color          : #6e2382;
+$secondary-color        : rgba($primary-color, 0.5);
 
-$text-color             : #39424B;
+$text-color             : #1c1b1b;
 $link-color             : #2895F1;
 
 /*----- Fonts -----*/
 
-$display-font            : Georgia, 'Times New Roman', serif;
-$section-title-font      : Helvetica, Arial, sans-serif;
-$text-font               : Helvetica, Arial, sans-serif;
+$display-font            : 'Roboto Slab', 'Times New Roman', serif;
+$section-title-font      : 'Roboto Slab', 'Times New Roman', serif;
+$text-font               : 'Open Sans', Arial, sans-serif;
 
 $italic-text-font        : 'false';
 $bold-text-font          : 'false';
@@ -45,4 +45,4 @@ $pad-unit               : 4px;
 
 /*----- Preferences -----*/
 
-$resume-label-first     : 'true';
+$resume-label-first     : 'false';

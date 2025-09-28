@@ -1,5 +1,12 @@
 .references-container {
-  .fa {
-    @include font-size(3.5);
+  .item {
+    .quote {
+      display: flex;
+      flex-direction: row;
+      
+      .fa {
+        @include font-size(3.5);
+      }
+    }
   }
 }

@@ -2,67 +2,59 @@
   padding-top: spacing(4);
 }
 
-.profile-header {
-  width: calc(100% - #{fontBasedSpacing(10 + 4) + spacing(2.75)});
-  margin-top: -3px;
-  margin-bottom: -3px;
+.resume-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 
-  .name,
-  .label {
-    box-sizing: border-box;
-    width: fit-content;
-  }
-
-  @if $resume-label-first == 'true' {
-    flex-direction: column-reverse;
-
-    .name {
-      @extend h2;
-      max-width: calc(100% - #{$aside-width + $aside-margin});
-      margin-left: $aside-width + $aside-margin;
-    }
-
+  .profile-header {
+    width: calc(100% - #{fontBasedSpacing(10 + 4) + spacing(2.75)});
+    margin-top: -3px;
+    margin-bottom: -3px;
+    display: flex;
+    flex-direction: column;
+  
+    .name,
     .label {
-      @extend h1;
-      @include gradient-text(left, ($primary-color, $secondary-color));
-      
-      // Fix print gradient border
-      padding: 0 2px;
-      border: 1px solid white;
-      box-shadow: 0 0 0 2px white;
-      box-shadow: 0 0 0 2px white inset;
-      margin-left: -3px;
+      box-sizing: border-box;
+      width: fit-content;
     }
-  } @else {
-    .name {
-      @include gradient-text(left, ($primary-color, $secondary-color));
-      
-      // Fix print gradient border
-      padding: 0 2px;
-      border: 1px solid white;
-      box-shadow: 0 0 0 2px white;
-      box-shadow: 0 0 0 2px white inset;
-      margin-left: -3px;
-    }
+  
+    @if $resume-label-first == 'true' {
+      flex-direction: column-reverse;
+  
+      .name {
+        @extend h2;
+        max-width: calc(100% - #{$aside-width + $aside-margin});
+        margin-left: $aside-width + $aside-margin;
+      }
+  
+      .label {
+        @extend h1;
+      }
 
-    .label {
-      max-width: calc(100% - #{$aside-width + $aside-margin});
-      margin-left: $aside-width + $aside-margin;
+    } @else {
+      .label {
+        max-width: calc(100% - #{$aside-width + $aside-margin});
+        margin-left: $aside-width + $aside-margin;
+      }
     }
   }
-}
-
-.profile-pic {
-  img {
-    height: fontBasedSpacing(10 + 4) + spacing(2.75);
-    width: fontBasedSpacing(10 + 4) + spacing(2.75);
-    border-radius: 50%;
+  
+  .profile-pic {
+    img {
+      height: fontBasedSpacing(10 + 4) + spacing(2.75);
+      width: fontBasedSpacing(10 + 4) + spacing(2.75);
+      border-radius: 50%;
+    }
   }
 }
 
 .section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
   .time-range {
     color: $secondary-color;
     margin-bottom: 0;
@@ -71,30 +63,23 @@
 
 .title {
   margin-bottom: spacing(2);
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: spacing(1);
   
   h3 {
-    background-color: white;
-    padding-right: spacing(1);
     margin-bottom: 0;
     display: inline-block;
-    position: relative;
-    z-index: 1;
   }
 
-  &::before {
+  &::after {
     content: "";
-    width: 100%;
+    flex-grow: 1;
+    align-self: flex-end;
     height: 1px;
+    margin-bottom: spacing(1);
     background-color: $primary-color;
     display: block;
-    position: absolute;
-    left: 0;
-    bottom: spacing() + 1px;
-  }
-
-  .right-column &::before {
-    @include gradient(left, ($primary-color, $secondary-color));
   }
 }
 
@@ -109,16 +94,4 @@
     padding-top: spacing(2);
     border-top: 1px solid $gray-lighter;
   }
-}
-
-.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
-}
-
-.clearfix {
-  @include clearfix();
 }

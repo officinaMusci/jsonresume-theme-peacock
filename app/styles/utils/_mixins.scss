@@ -40,11 +40,3 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}

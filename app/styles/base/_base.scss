@@ -108,7 +108,6 @@ blockquote {
 
 em {
   @include italic-font();
-  color: $gray-dark;
 }
 
 strong {
