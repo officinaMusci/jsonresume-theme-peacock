@@ -1,6 +1,6 @@
-<div class="section-header clearfix">
+<div class="section-header">
   {{#if name}}
-    <h4 class="pull-left">
+    <h4>
       {{#if website}}
         <a href="{{website}}" target="_blank">
           {{name}} <i class="fa fa-external-link" aria-hidden="true"></i>
@@ -10,7 +10,7 @@
       {{/if}}
     </h4>
   {{/if}}
-  <p class="time-range pull-right">
+  <p class="time-range">
     {{#if startDate}}
       <span class="startDate">{{formatDate startDate}}</span>
     {{#if endDate}}

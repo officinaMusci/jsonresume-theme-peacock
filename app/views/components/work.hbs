@@ -6,13 +6,15 @@
       <section class="item">
         {{> section-header name=this.name website=this.url }}
 
-        {{#if location}}
-          <p class="pull-right">{{location}}</p>
-        {{/if}}
+        <div class="work-info">
+          {{#if location}}
+            <p>{{location}}</p>
+          {{/if}}
 
-        {{#if position}}
-          <h5>{{position}}</h5>
-        {{/if}}
+          {{#if position}}
+            <h5>{{position}}</h5>
+          {{/if}}
+        </div>
 
         {{#if description}}
           {{#if summary}}
