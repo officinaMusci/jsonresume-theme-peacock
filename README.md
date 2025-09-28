@@ -4,18 +4,25 @@ This is the Peacock theme repository for the [Json Resume](https://jsonresume.or
 
 ## Table of Contents
 
-* [Installation](#installation)
-* [Features](#features)
-* [Getting Started](#getting-started)
-* [Running](#running)
-* [Theme Overrides](#theme-overrides)
-    * [Icons](#icons)
-    * [About](#about)
-    * [Colors](#colors)
-* [Developer Environment](#developer-environment)
-* [Creating your resume.json](#creating-your-resumejson)
-* [Building the project](#building-the-project)
-* [Exporting your resume](#exporting-your-resume)
+- [jsonresume-theme-peacock  ](#jsonresume-theme-peacock--)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Quick Commands](#quick-commands)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+  - [Running](#running)
+  - [Creating your resume.json](#creating-your-resumejson)
+    - [Ignoring changes in resume.json](#ignoring-changes-in-resumejson)
+  - [Building the project](#building-the-project)
+  - [Exporting your resume](#exporting-your-resume)
+  - [Theme Overrides](#theme-overrides)
+    - [Icons](#icons)
+    - [Contacts](#contacts)
+    - [Colors](#colors)
+  - [Developer Environment](#developer-environment)
+      - [/app](#app)
+      - [/gulp](#gulp)
+      - [index.js](#indexjs)
 
 ## Installation
 This project uses [gulp](http://gulpjs.com/) and [resume-cli](https://github.com/jsonresume/resume-cli) for all of its internal build processes. In theory, this project requires minimum a of `Node v8.2+` & `NPM v5.2` to run, but it is recommended to use `Node v12+`.
@@ -110,8 +117,8 @@ All the icons used in the theme are generated through [Font-Awesome](http://font
 
 The Twitter and Facebook network keys will be appended to `fa-` to generate `fa-twitter` and `fa-facebook` respectively. Be sure to search within the [font awesome icons](http://fontawesome.io/icons/) to figure out the correct network name you want to use for the icon (i.e. if you want to use a different facebook icon, change the network name to [Facebook-Official](http://fontawesome.io/icon/facebook-official/) or [Facebook-Square](http://fontawesome.io/icon/facebook-square/)).
 
-### About
-The entire about section on the left column is populated through the `basics` json config. This section is intentionally kept narrow to provide a quick summary and prevent it from taking up too much real estate on the resume.
+### Contacts
+The entire contacts section on the left column is populated through the `basics` json config. This section is intentionally kept narrow to provide a quick summary and prevent it from taking up too much real estate on the resume.
 
 However, unfortunately it may be too narrow for folks with really long emails or website names. You can fix this in one of two ways:
 
