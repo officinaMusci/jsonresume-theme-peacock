@@ -16,8 +16,14 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "npx gulp && npx resume serve --theme .",
-    "export": "npx gulp && npx resume export resume --format pdf --theme ."
+  "start": "npx gulp && npx resume serve --theme .",
+  "start:en": "npx gulp && RESUME_LANG=en npx resume serve --theme .",
+  "start:fr": "npx gulp && RESUME_LANG=fr npx resume serve --theme .",
+  "start:it": "npx gulp && RESUME_LANG=it npx resume serve --theme .",
+  "export": "npx gulp && npx resume export resume --format pdf --theme .",
+  "export:en": "npx gulp && RESUME_LANG=en npx resume export resume --format pdf --theme .",
+  "export:fr": "npx gulp && RESUME_LANG=fr npx resume export resume --format pdf --theme .",
+  "export:it": "npx gulp && RESUME_LANG=it npx resume export resume --format pdf --theme ."
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",

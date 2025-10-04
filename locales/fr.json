@@ -1,0 +1,43 @@
+{
+    "awards": {
+        "title": "Prix"
+    },
+    "certificates": {
+        "title": "Certificats"
+    },
+    "contacts": {
+        "title": "Contacts"
+    },
+    "education": {
+        "title": "Formation"
+    },
+    "interests": {
+        "title": "Intérêts"
+    },
+    "languages": {
+        "title": "Langues"
+    },
+    "projects": {
+        "title": "Projets"
+    },
+    "publications": {
+        "title": "Publications"
+    },
+    "references": {
+        "title": "Références"
+    },
+    "skills": {
+        "title": "Compétences"
+    },
+    "summary": {
+        "title": "Résumé"
+    },
+    "volunteer": {
+        "title": "Bénévolat"
+    },
+    "work": {
+        "title": "Expérience"
+    },
+    "present": "Aujourd'hui",
+    "profilePicture": "Photo de profil"
+}

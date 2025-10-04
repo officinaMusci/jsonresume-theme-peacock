@@ -1,6 +1,6 @@
 {{#if resume.education.length}}
 <div class="container education-container">
-  {{> title value="Education"}} {{#each resume.education}}
+  {{> title value=(t "education.title")}} {{#each resume.education}}
   <section class="item">
     {{> section-header name=this.institution website=this.url }}
     {{#if area}}

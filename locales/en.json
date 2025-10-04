@@ -1,0 +1,43 @@
+{
+    "awards": {
+        "title": "Awards"
+    },
+    "certificates": {
+        "title": "Certificates"
+    },
+    "contacts": {
+        "title": "Contacts"
+    },
+    "education": {
+        "title": "Education"
+    },
+    "interests": {
+        "title": "Interests"
+    },
+    "languages": {
+        "title": "Languages"
+    },
+    "projects": {
+        "title": "Projects"
+    },
+    "publications": {
+        "title": "Publications"
+    },
+    "references": {
+        "title": "References"
+    },
+    "skills": {
+        "title": "Skills"
+    },
+    "summary": {
+        "title": "Summary"
+    },
+    "volunteer": {
+        "title": "Volunteer"
+    },
+    "work": {
+        "title": "Work"
+    },
+    "present": "Present",
+    "profilePicture": "Profile picture"
+}

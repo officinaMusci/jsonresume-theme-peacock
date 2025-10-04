@@ -95,6 +95,30 @@ To export your resume, you can run the following command below. This will automa
 npm run export
 ```
 
+You can control the language used by the theme with the environment variable `RESUME_LANG` (defaults to `en`). Example:
+
+```bash
+# Run the dev server in French
+RESUME_LANG=fr npm start
+
+# Export PDF in Italian
+RESUME_LANG=it npm run export
+```
+
+Alternatively, there are convenience npm scripts that preset the language for you:
+
+```bash
+# Development server
+npm run start:en   # English
+npm run start:fr   # French
+npm run start:it   # Italian
+
+# Export PDF
+npm run export:en
+npm run export:fr
+npm run export:it
+```
+
 Alternatively, you can also do a **print page** on the browser and save it as as PDF (by setting margins to none and removing header/footers.)
 
 ## Theme Overrides
